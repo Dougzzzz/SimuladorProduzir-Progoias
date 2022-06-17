@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simulador Produzir - ProGoiás</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    
 </head>
 
 <body>
@@ -20,10 +20,16 @@
         <h2>Obrigações Tributárias</h2>
         <Form>
             <label for="icmsMedia">Insira a média de ICMS: </label>
-            <input type="number" name="icmsMedia">
+            <input type="number" name="icmsMedia" id="mediaDeRecolhimento">
             
         </Form>
-        <button>calcular</button>
+        <button onclick="calculaTributos()" >calcular</button>
     </div>
+
+    <div class="resultadoSimulacao" id="resultadoSimulacao">
+        
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
+
