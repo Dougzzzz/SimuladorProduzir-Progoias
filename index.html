@@ -5,30 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simulador Produzir - ProGoiás</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     
 </head>
 
 <body>
 
-    <div class="apresentacao">
-        <h1>Simulador Programa PRODUZIR e PróGoiás</h1>    
-        <p>O PRODUZIR é um benefício fiscal com base no ICMS, criado pelo estado de Goiás. Consiste basicamente na subvenção para investimentos no percentual de 73%.</p>
-    </div>
-
-    <div class="obrigacoesTributarias">
-        <h2>Obrigações Tributárias</h2>
-        <Form>
-            <label for="icmsMedia">Insira a média de ICMS: </label>
-            <input type="number" name="icmsMedia" id="mediaDeRecolhimento">
-            
-        </Form>
-        <button onclick="calculaTributos()" >calcular</button>
-    </div>
-
-    <div class="resultadoSimulacao" id="resultadoSimulacao">
+    <container class="apresentacao">
+        <h1>Simulador Programa PRODUZIR e Pro Goiás</h1>    
         
-    </div>
+        <h2>PRODUZIR</h2>
+
+        <p>
+            Produzir é o Programa do Governo do Estado de Goiás que incentiva a implantação, expansão ou revitalização de indústrias, estimulando a realização de investimentos, a renovação tecnológica e o aumento da competitividade estadual com ênfase na geração de emprego, renda e redução das desigualdades sociais e regionais. Consiste basicamente na subvenção para investimentos no percentual de 73% do ICMS industrial.
+        </p>
+
+        <p>
+            Acesse o site do PRODUZIR para ter mais detalhes <a rel="noopener" href="https://www.industriaecomercio.go.gov.br/fomento-e-competitividades/produzir.html" target="_blank">SIC - PRODUZIR</a>
+        </p>
+
+        <h2>Pro Goiás</h2>
+
+        <p>
+            O Pro Goiás é um novo programa de incentivos fiscais do estado de Goiás que substitui o programa PRODUZIR. O novo incentivo funciona na forma de uma crédito outorgado, onde a indústria pode ter a partir de 64% de subvenção no ICMS industrial e 66% a partir do 25º mês de fruição.
+        </p>
+
+        <p>
+            Acesse o site do Pro Goiás para ter mais detalhes <a rel="noopener" href="https://www.economia.go.gov.br/progoias" target="_blank">SIC - PRODUZIR</a>
+        </p>
+
+        
+    </container>
+    <container class="obrigacoesProduzir">
+        
+        <div>
+            
+            <form>
+                <label for="icmsMedia">Insira a média de ICMS: R$ </label>
+                <input type="number" step="0.01" min="0.01" name="icmsMedia" id="mediaDeRecolhimento">
+                            
+            </form>
+            <button onclick="calculaTributos()" >Calcular</button>
+            <input type="reset" value="Limpar" onclick="limparSimulação()">
+            
+        </div>
+
+    </container>
+
+    <container class="resultadosProduzir">
+        <div class="resultadoSimulacao" id="resultadoSimulacao">
+           
+        </div>
+    </container>
+
+    <container class="resultadosProGoiás">
+        <div class="resultadoSimulacaoProgoias" id="resultadoSimulacaoProgoias">
+           
+        </div>
+
+
+    </container>
+
     <script src="script.js"></script>
 </body>
 </html>

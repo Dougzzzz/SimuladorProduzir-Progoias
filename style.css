@@ -1,0 +1,118 @@
+body {
+	background-image: linear-gradient( to bottom, rgb(224, 227, 241), rgb(228, 231, 247) );
+	background-color: #e9eef1;
+	font-family: 'Open Sans',Arial,sans-serif;
+}
+
+.container {
+	width: 94%;
+	margin: 0 auto;
+}
+
+.apresentacao h1 {
+    font-weight: bold;
+	font-size: 2em;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.apresentacao h2 {
+    font-weight: bold;
+	font-size: 1.5em;
+	margin-left: 2em;
+	margin-bottom: 20px;
+}
+
+.apresentacao p {
+    font-size: medium;
+    margin-bottom: 20px;
+}
+
+.resultadoSimulacao h3 {
+    font-weight: bolder;
+	font-size: 1.25em;
+	margin-bottom: 20px;
+	margin-left: 2em; 
+
+}
+.obrigacoesProduzir h2 {
+    font-weight: bold;
+	font-size: 1.5em;
+	margin-bottom: 20px;
+}
+
+.obrigacoesProduzir form, button {
+    display: inline-block;
+    margin-bottom: 20px;
+    
+} 
+
+.resultadoSimulacaoProgoias h3 {
+	font-weight: bolder;
+	font-size: 1.25em;
+	margin-top: 20px;
+	margin-left: 2em; 
+	margin-bottom: 20px;
+}
+
+.resultadoSimulacaoProgoias h4 {
+	font-weight: bolder;
+	font-size: 1em;
+	text-align: center;
+	text-decoration: dashed;
+	margin-top: 15px;
+	margin-bottom: 15px; 
+}
+
+.listaObrigacoes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.listaObrigacoesItem {
+	width: 35px;
+	background-color: rgb(224, 228, 245);
+	text-align: center;
+	margin: 1%;
+	transition: .3s;
+	box-shadow: 2px 2px 2px #CCC;
+	position: relative ;
+    text-decoration: none;
+	color: #000;
+	font-weight: bold;
+	display: block;
+	width: fit-content;
+	height: 20%;
+	
+}
+
+.listaObrigacoesItem:nth-child(7) {
+	background-color: rgb(39, 72, 223);
+	color:  rgb(217, 220, 235);
+}
+
+.listaObrigacoesProGoias {
+	display: flex;
+    flex-wrap: wrap;
+}
+
+.listaObrigacoesItemPro {
+	width: 35px;
+	background-color: rgb(224, 228, 245);
+	text-align: center;
+	margin: 1%;
+	transition: .3s;
+	box-shadow: 2px 2px 2px #CCC;
+	position: relative ;
+    text-decoration: none;
+	color: #000;
+	font-weight: bold;
+	display: block;
+	width: fit-content;
+	height: 20%;
+}
+
+.listaObrigacoesItemPro:nth-child(4) {
+	background-color: rgb(39, 72, 223);
+	color:  rgb(217, 220, 235);
+}
