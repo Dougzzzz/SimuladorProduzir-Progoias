@@ -8,7 +8,7 @@ function calculaTributos() {
     let protege6 = icms73 * 0.06;
     let protege15 = icms73 * 0.15;
     let protegeOvg = icms73 * 0.015;
-    let benefícioLiquido = icms73 - (icms27 + antecipacao + protege6 + protege15 + protegeOvg)
+    let benefícioLiquido = icms73 - (antecipacao + protege6 + protege15 + protegeOvg)
     
     let elementoResultado = document.querySelector("#resultadoSimulacao");
     elementoResultado.innerHTML = `
@@ -37,19 +37,19 @@ function calculaProgoias(){
     let icms64 = mediaRecolhimento * 0.64;
     let icms36 = mediaRecolhimento * 0.36;
     let protegeAno1 = mediaRecolhimento * 0.1;
-    let benefícioLiquido1ano = icms64 - (icms36 + protegeAno1);
+    let benefícioLiquido1ano = icms64 - protegeAno1;
 
     //calculo do Progoiás no segundo ano
     let icms65 = mediaRecolhimento * 0.65;
     let icms35 = mediaRecolhimento * 0.35;
     let protegeAno2 = mediaRecolhimento * 0.08;
-    let benefícioLiquido2ano = icms65 - (icms35 + protegeAno2);
+    let benefícioLiquido2ano = icms65 - protegeAno2;
 
     //calculo do Progoiás no terceiro ano
     let icms66 = mediaRecolhimento * 0.66;
     let icms34 = mediaRecolhimento * 0.34;
     let protegeAno3 = mediaRecolhimento * 0.06;
-    let benefícioLiquido3ano = icms66 - (icms34 + protegeAno3);
+    let benefícioLiquido3ano = icms66 - protegeAno3;
 
     let elementoResultado = document.querySelector("#resultadoSimulacaoProgoias");
     elementoResultado.innerHTML = `
